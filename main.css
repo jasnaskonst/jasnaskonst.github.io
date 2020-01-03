@@ -12,5 +12,9 @@ body {
   font-size: 26px;
 }
 .header {
-  background-image: url(bilder/header.png);
+  background-image: url(bilder/header.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  border-top: 2px solid #333;
 }
