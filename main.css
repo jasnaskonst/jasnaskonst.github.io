@@ -2,6 +2,7 @@
 
 body {
   font-family: Roboto, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
 }
 .navbar {
   background-color: #39819e;
@@ -21,6 +22,7 @@ body {
 }
 .kontakt-container {
   background-color: #e9ecef;
+  margin-right: 0;
 }
 .kontakt {
   margin-top: 1em;
@@ -30,6 +32,6 @@ body {
   margin-top: 1.5em;
 }
 .icon {
-  width: 3.6em;
+  width: 3.5em;
   height: auto;
 }
