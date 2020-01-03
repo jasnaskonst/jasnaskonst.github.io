@@ -13,4 +13,11 @@ body {
 }
 .header {
   background-image: url(bilder/header.jpg);
+<<<<<<< HEAD
+=======
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  border-top: 2px solid #333;
+>>>>>>> 867b2326ba4f0b233f8a436cfd657e97f6033261
 }
