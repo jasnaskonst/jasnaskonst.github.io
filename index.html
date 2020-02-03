@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="main.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar">
   <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand" href="#">Jasnas Konst</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,7 +16,28 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
+        <li class="nav-item">
+          <a class="nav-link" href="#navbar2">Hem</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#kontakt">Kontakt</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#galleri">Galleri</a>
+        </li>
+      </li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="navbar2" class="navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Jasnas Konst</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
           <a class="nav-link" href="#navbar">Hem</a>
         </li>
         <li class="nav-item">
@@ -36,7 +57,7 @@
 <p>Konstnär</p>
 </div>
 </div>
-<div class="p-3 mb-2 bg-secondary text-white"><p>att göra: flytta ner bilden till kontakt(till vänster), fixa bannerbild, fixa text, fixa bilder, fixa allt</p></div>
+<div class="p-3 mb-2 bg-secondary text-white"><p>att göra: flytta ner bilden till kontakt(till vänster), fixa bannerbild, fixa text, fixa bilder, fixa allt, fixa navbar med bättre kod</p></div>
 
 <div class="row" id="kontakt">
   <div class="col-sm-7 info-container">
@@ -47,8 +68,9 @@
   <div class="col-sm-5 kontakt-container">
     <div class="container">
       <div class="kontakt">
+        <img src="bilder/header.png">
         <h4>Kontakt</h4>
-        <p>Telefon: <b>0373-000 00</b></p>
+        <p>Telefon: <b>070-671 57 99</b></p>
         <a target="_blank" href="https://facebook.com"><img class="icon" src="bilder/facebook.png" alt="facebook"></a>
         <a href="#"><img src="bilder/email.svg" alt="" class="icon" title="E-post"></a>
       </div>
