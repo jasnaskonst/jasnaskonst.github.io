@@ -22,7 +22,7 @@
           <a class="nav-link" href="#page">Hem</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" onclick="kontaktScroll()" href="#kontakt">Kontakt</a>
+          <a class="nav-link" href="#kontakt">Kontakt</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#galleri">Galleri</a>
@@ -34,15 +34,19 @@
 <div class="jumbotron jumbotron-fluid header">
 <div class="container">
 <h1>Jasna Lindström</h1>
-<p>Konstnär</p>
+<p class="title">Konstnär</p>
 </div>
 </div>
-<div class="p-3 mb-2 bg-secondary text-white"><p>att göra: flytta ner bilden till kontakt(till vänster), fixa bannerbild, fixa text, fixa bilder, fixa allt, <del>fixa navbar med bättre kod</del>
-</p></div>
 
-<div class="row" id="kontakt">
+<!--<div class="p-3 mb-2 bg-secondary text-white"><p>att göra: flytta ner bilden till kontakt(till vänster), fixa bannerbild, fixa text, fixa bilder, fixa allt, <del>fixa navbar med bättre kod</del>
+</p></div>-->
+
+<div class="row" id="kontaktR">
+
   <div class="col-sm-7 info-container">
+    <div id="kontakt" class="scrollelement"></div>
     <div class="container">
+<div class="alert alert-warning"><p>Denna webbplats är under uppbyggnad.</div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
   </div>
@@ -59,33 +63,51 @@
   </div>
 </div>
 
-<div class="galleri" id="galleri">
-<h4>Galleri</h4>
+<div class="galleri" id="galleriR">
+  <div id="galleri" class="scrollelement"></div>
+  <div class="container">
+<h3>Galleri</h3>
+
+<div class="row">
+
+<div class="col-sm-4">
+  <div class="container">
+<!-- img --><div style="width:100%;height:15rem;background-color:#ddd;"></div>
+  </div>
 </div>
+<div class="col-sm-4">
+  <div class="container">
+<!-- img --><div style="width:100%;height:15rem;background-color:#ddd;"></div>
+  </div>
+</div>
+<div class="col-sm-4">
+  <div class="container">
+<!-- img --><div style="width:100%;height:15rem;background-color:#ddd;"></div>
+  </div>
+</div>
+
+</div> <!-- .row -->
+</div> <!-- .container -->
+</div> <!-- .galleri -->
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+<footer class="footer">
+<p class="ftext" style="margin-bottom:0;margin-left:0.25rem;">© Jasna Lindström / Jasnas Konst 2020</p>
+</footer>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script>
-/*document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
-        /*document.querySelector(this.getAttribute('href')).scrollIntoView({
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
         });
     });
-});*/
-
-function kontaktScroll() {
-const yOffset = -100;
-const element = document.getElementById('kontakt');
-const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-
-window.scrollTo({top: y, behavior: 'smooth'});
-}
+});
 </script>
 </body>
 </html>
