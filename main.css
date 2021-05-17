@@ -17,7 +17,8 @@ body {
 
 /*----- navbar -----*/
 .navbar {
-  background-color: #39819e;
+  /*background-color: #39819e;*/
+  background-color: #0E7BA6;
   padding: 1em;
   font-size: 20px;
   position: sticky;
@@ -77,6 +78,10 @@ p {
 /*----- galleri -----*/
 .galleri {
   margin-top: 4rem;
+}
+
+.navbar-toggler {
+  border: 0;
 }
 
 
